@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .img_box {
+            padding-top: 30px;
+            
+        }
+        .img {
+            width: 1000px;
+            height: 600px;
+        }
+        .button {
+            border: none;
+            background-color: yellow;
+            padding: 1em;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .content {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .toggles {
+            display: flex;
+            gap: 10px;
+        }
+        .toggle {
+            background-color: gainsboro;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .active_toggle {
+            background-color: gray;
+        }
+
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="img_box">
+            <img src="img/scale_1200.png" alt="" class="img">
+        </div>
+        <div class="content">
+            <button class="button back">Назад</button>
+        <div class="toggles">
+            <a href="#" class="toggle"></a>
+            <a href="#" class="toggle"></a>
+            <a href="#" class="toggle"></a>
+            <a href="#" class="toggle"></a>
+            <a href="#" class="toggle"></a>
+        </div>
+        <button class="button next">Вперед</button>
+        </div>
+    </div>
+</body>
+</html>
